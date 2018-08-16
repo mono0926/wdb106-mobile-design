@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CartCell" rowHeight="135" id="Cel-jD-kVd" customClass="CartCell" customModule="ShoppingAppForiOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cel-jD-kVd" id="Vb4-Rj-hbk">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zvk-aV-CaX">
+                        <rect key="frame" x="16" y="8" width="57" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="7Dd-Hz-Fw8"/>
+                            <constraint firstAttribute="width" constant="57" id="8Vl-0P-4em"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="260" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2f-Ua-I97">
+                        <rect key="frame" x="326" y="34" width="31" height="30"/>
+                        <state key="normal" title="削除">
+                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="TJE-LM-LL7">
+                        <rect key="frame" x="81" y="20" width="230" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLO-r4-gv1">
+                                <rect key="frame" x="0.0" y="0.0" width="230" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQJ-JD-jRe">
+                                <rect key="frame" x="0.0" y="23.5" width="230" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数量: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keK-Hc-Kpz">
+                                <rect key="frame" x="0.0" y="44.5" width="230" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Zvk-aV-CaX" firstAttribute="top" secondItem="Vb4-Rj-hbk" secondAttribute="top" constant="8" id="0Tv-J2-aaU"/>
+                    <constraint firstItem="Zvk-aV-CaX" firstAttribute="leading" secondItem="Vb4-Rj-hbk" secondAttribute="leadingMargin" id="E6b-JY-sKk"/>
+                    <constraint firstItem="TJE-LM-LL7" firstAttribute="leading" secondItem="Zvk-aV-CaX" secondAttribute="trailing" constant="8" id="VrX-wM-TG2"/>
+                    <constraint firstItem="c2f-Ua-I97" firstAttribute="centerY" secondItem="Vb4-Rj-hbk" secondAttribute="centerY" id="Vrs-XJ-9tR"/>
+                    <constraint firstItem="TJE-LM-LL7" firstAttribute="centerY" secondItem="Vb4-Rj-hbk" secondAttribute="centerY" id="Z1h-Qw-reP"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Zvk-aV-CaX" secondAttribute="bottom" constant="8.5" id="cjt-NE-EmE"/>
+                    <constraint firstItem="c2f-Ua-I97" firstAttribute="leading" secondItem="TJE-LM-LL7" secondAttribute="trailing" constant="15" id="iQE-1G-7m4"/>
+                    <constraint firstAttribute="trailing" secondItem="c2f-Ua-I97" secondAttribute="trailing" constant="16" id="irJ-CA-Qfv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="kcA-2a-NOm"/>
+            <connections>
+                <outlet property="actionButton" destination="c2f-Ua-I97" id="yku-2H-mFt"/>
+                <outlet property="itemImageView" destination="Zvk-aV-CaX" id="kTA-iM-ecq"/>
+                <outlet property="priceLabel" destination="XQJ-JD-jRe" id="Ytg-zv-yDm"/>
+                <outlet property="quantitysLabel" destination="keK-Hc-Kpz" id="HB2-ST-oLJ"/>
+                <outlet property="titleLabel" destination="vLO-r4-gv1" id="NGa-bl-xMf"/>
+            </connections>
+            <point key="canvasLocation" x="10.5" y="42.5"/>
+        </tableViewCell>
+    </objects>
+</document>

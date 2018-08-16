@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ShoppingApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_cart">カート</string>
+    <string name="add">追加</string>
+    <string name="price">%d円＋税</string>
+    <string name="quantity">数量： %d</string>
+    <string name="inventory">在庫： %d</string>
+    <string name="buy">Buy</string>
+    <string name="total_cost">合計金額: %d円+税</string>
+    <string name="remove">削除</string>
+    <string name="cart_count">カート(%d)</string>
+</resources>
